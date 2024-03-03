@@ -52,7 +52,7 @@ ol {
   height: 800px;
   display: flex;
   justify-content: center;
-  align-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
 }
 
