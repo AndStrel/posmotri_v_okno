@@ -54,7 +54,7 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
+  height: min-content;
   display: flex;
   align-items: flex-end;
   gap: 30px;
@@ -64,6 +64,10 @@ ol {
   height: 402px;
   padding-bottom: 16px;
   position: relative;
+}
+
+.preloader {
+  height: 386px;
 }
 
 .result__video {
@@ -80,13 +84,10 @@ ol {
 }
 
 .title {
-  padding-bottom: 26px;
-
-  font-family: "Oswald";
+  padding-bottom: 23px;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
-
   line-height: 70px;
-
   text-align: left;
   text-transform: uppercase;
 }
@@ -123,20 +124,17 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
 }
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: rgba(84, 80, 80, 1);
 }
 
-.content__card-link:active {
-  background-color: rgba(84, 80, 80, 1);
-}
 .content__card-link:hover {
   text-decoration: underline;
 }
@@ -168,7 +166,6 @@ ol {
 
 .search-form__fieldset {
   width: 225px;
-  height: 54px;
   border: none;
 }
 
@@ -178,10 +175,11 @@ ol {
   line-height: 21.6px;
   letter-spacing: 0em;
   text-align: left;
+  padding-bottom: 6px;
 }
 
 .search-form__textfield {
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   width: 225px;
   font-size: 18px;
   font-weight: 400;
@@ -194,14 +192,13 @@ ol {
   border: none;
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
-  margin-top: 6px;
   color: #fff;
 }
 
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-around;
-  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .search-form__label {
@@ -215,6 +212,10 @@ ol {
   gap: 5px;
 }
 
+.search-form__label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
@@ -249,7 +250,7 @@ ol {
 .button {
   background: initial;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -266,8 +267,8 @@ ol {
 
 .more-button {
   width: 100%;
-  height: 34px;
-  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .button:hover {
