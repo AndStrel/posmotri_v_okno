@@ -16,6 +16,11 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -45,15 +50,6 @@ ol {
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-}
-
-.page {
-  width: 1200px;
-  height: 800px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .content {
