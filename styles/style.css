@@ -62,12 +62,8 @@ ol {
 .result__video-container {
   width: 711px;
   height: 402px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   position: relative;
-}
-
-.preloader {
-  height: 386px;
 }
 
 .result__video {
@@ -188,6 +184,7 @@ ol {
   text-align: left;
   background-color: initial;
   cursor: text;
+  text-decoration: none;
   appearance: none;
   border: none;
   border-bottom: 1px solid #fff;
@@ -214,14 +211,17 @@ ol {
 
 .search-form__label:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 .search-form__textfield:active {
   outline: 1px solid #fff;
 }
+.search-form__label {
+  text-decoration: none;
+}
 .search-form__textfield:focus {
   outline: none;
 }
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -234,12 +234,14 @@ ol {
   display: block;
   margin-top: 2px;
   margin-left: 2px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   width: 15px;
@@ -261,7 +263,8 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 10px;
 }
 
